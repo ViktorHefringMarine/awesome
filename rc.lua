@@ -477,9 +477,9 @@ globalkeys = my_table.join(
 	awful.key({ ctrlkey, altkey }, "o", function()
 		awful.spawn.with_shell("$HOME/.config/awesome/scripts/picom-toggle.sh")
 	end, { description = "Picom toggle", group = "alt+ctrl" }),
-	awful.key({ ctrlkey, altkey }, "s", function()
-		awful.util.spawn(mediaplayer)
-	end, { description = mediaplayer, group = "alt+ctrl" }),
+	-- awful.key({ ctrlkey, altkey }, "s", function()
+	-- 	awful.util.spawn(mediaplayer)
+	-- end, { description = mediaplayer, group = "alt+ctrl" }),
 	awful.key({ ctrlkey, altkey }, "u", function()
 		awful.util.spawn("pavucontrol")
 	end, { description = "pulseaudio control", group = "alt+ctrl" }),

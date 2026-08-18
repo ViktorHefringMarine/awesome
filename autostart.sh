@@ -9,6 +9,11 @@ function run {
 
 run xset r rate 180 35
 
+# NOTE: THIS WILL NOT APPLY TO THE HOMESCREEN.
+# To make it apply to the homescreen you need to run the command:
+# > sudo localectl --no-convert set-x11-keymap A-real-prog-dvorak pc105 '' altwin:swap_alt_win
+# which will rewrite /etc/X11/xorg.conf.d/00-keyboard.conf
+#
 # Location /usr/share/X11/xkb/symbols/A-real-prog-dvorak
 # ~/.config/my-keyboards/A-real-prog-dvorak
 run setxkbmap A-real-prog-dvorak -option altwin:swap_alt_win
